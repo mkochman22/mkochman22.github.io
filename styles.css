@@ -1,0 +1,314 @@
+
+body {
+background-color: #F4F2F0; 
+margin:0; 
+min-width:600px; 
+
+}
+ 
+/*STYLE TAGS FOR HEADER*/ 
+header {
+   width:100%;
+   height: 350px;
+   position: relative;
+   padding: 0;
+   margin:0;
+   background-color: #373234;
+   overflow: hidden;
+}
+h1 {
+   color: #F4F2F0;
+   font-variant: small-caps;
+   text-shadow: 1px 1px 10px black;
+   font-size: 125px;
+   bottom: 0;
+   left: 5vw;
+   position: absolute;
+   
+}
+h2 {
+	color: #373234;
+	
+	font-variant: small-caps;
+}
+
+
+
+
+
+
+/*CLASSES*/
+
+/*Links and Icons classes for socials links and buttons*/
+.links{
+	color: #E8F8F5;
+	font-size: 15px;
+	position: absolute;
+	text-decoration: none;
+
+}
+.links a:link {
+	color: #E8F8F5;
+	text-decoration: none;
+}
+
+.links a:visited {
+	color: #E8F8F5;
+	text-decoration: none;
+}	
+.icons {
+	height: 50px;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.feeticons .icons {
+	height: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+/* header image */
+.image{
+   background: url("scared_rose.png");
+   background-position: bottom;
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 350px;
+   left: 0;
+   right: 0;
+   z-index: -5;
+   margin: -5;
+   opacity: .5;
+   transform: translate(28vw, 0px);
+   overflow: hidden;
+}
+/*STYLE TAGS FOR NAVBAR */
+nav {
+   margin: 0px;
+   padding: 0px;
+   transform: translate( 0px, -16px);
+}
+/*UL and LI tags for navbar*/
+ul {
+   text-align:center;
+   display: inline-block;
+   list-style-type: none;
+   margin-left: 0px;
+   width: 100%;
+   background-color: #91312a;
+   font-variant: small-caps;
+}
+.normal {
+	text-align:left;
+   display: initial;
+   list-style-type: none;
+   margin-left: 0px;
+   width: 100%;
+   background-color: #E8F8F5;
+   font-variant: small-caps;
+}
+
+.normals {
+	float: none;
+	font-size: 18px;
+	padding-left: 20%;
+}
+
+li {
+   float: left;
+}
+
+.logo {
+	float: right;
+	transform: translate(-2vw, 0);
+}
+
+.navbar, .dropbtn {
+   display: inline-block;
+   color: #F4F2F0;
+   padding: 14px 15px;
+   font-size: 20px;
+   border: 1px solid transparent;
+   text-decoration: none; 
+
+}
+        
+.navbar:hover {
+   background-color: #373234;
+   border: 1px solid #373234;
+}
+/* code for drop down list in nav*/
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* used w3schools as reference for navbar and dropdown list */
+.dropdown .dropbtn{
+	font-size: 20px;
+	border: 1px solid transparent;
+	outline: none;
+	color: #E8F8F5;
+	padding: 14px 15px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+.nav a:hover, .dropdown:hover .dropbtn {
+	background-color: #373234;
+	border: 1px solid #373234;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ed5d53;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px black;
+	z-index: 10;
+	transform: translate(-30px,);
+	
+}
+
+.dropdown-content a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	border: 1px solid transparent;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #d84339;
+	border: 1px solid #ed5d53;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*STYLE TAGS FOR MAIN BODY*/
+
+/*columns for rows in body, side by side content*/
+.column {
+   float:left;
+   width:50%;
+   border-radius: 50px;
+   text-align: center;
+   vertical-align: middle;
+   display: table-cell;
+}
+.row:after {
+   content: "";
+   display: grid;
+   clear: both;
+   vertical-align: middle;
+   justify-content: center;
+   align-content: center;
+   gap: 4px;
+   grid-auto-flow: column;
+}
+
+.picture {   
+float:middle;
+   width:20%;
+   padding: 10px;
+   margin-top: 5%;
+   border-radius: 50px;
+   text-align: center;
+	vertical-align: middle;
+
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/* code for overlaying text on image, used w3schools tutorial as reference */
+.container {
+	position:relative;
+	translate: transform(50%,);
+	width: 100%;
+	text-align:center;
+}
+
+.overlay {
+	position: absolute;
+	bottom:100%;
+	background-color: #91312a;
+	overflow: hidden;
+	width: 75%;
+	height: 0;
+	transition: .5s ease;
+	border-radius: 15%;
+	text-align:center;
+}
+
+.container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+	border: 2px solid #373234;
+	text-align:center;
+}
+
+.text {
+	color: #F4F2F0;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align:center;
+}
+
+
+
+footer {
+	display: flex;
+	width: 100%;
+	height: 250px;
+	background-color: #373234;
+	color: #E8F8F5;
+	overflow: hidden;
+	position: absolute;
+	font-family: system-ui;
+	align-items: center;
+	justify-content: center;
+	min-width: 600px;
+}
+
+.title {
+	margin-left: 25px;
+}
+
+.titleimg {
+	vertical-align: middle;
+	border-radius: 15px;
+	height: 49px;
+}
+
+.player {
+	text-align: center;
+}
+
+.clips {
+	background-color: #91312a;
+	padding: 10px;
+	text-align: center;
+	width: 90%;
+	border-radius: 20px;
+	margin-left:5%;
+}
+
+.vertical-center {
+       display: table-cell;
+	   vertical-align:middle;
+}

@@ -1,0 +1,300 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  line-height: 1.7rem;
+  background-color: #F4F2F0;
+}
+
+.quiz-container {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px white;
+  padding: 3rem;
+  text-shadow: 0 1px #00000010;
+  width: 60%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(360deg, #E8F8F5, #ffffff);
+  min-height: 100vh;
+  border: 5px solid #E8F8F5;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: #00000050;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.question {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.option {
+  padding: 1rem;
+  color: #00000095;
+  background: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.option:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.option input:checked .option {
+  background: #08038c;
+  color: #000;
+}
+.controls > * {
+  margin: 1rem;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 300;
+  color: white;
+  outline: none;
+  transform: scale(0.98);
+  transition: all 0.2s;
+}
+button.previous {
+  background: #c84630;
+}
+button.next {
+  background: #3c91e6;
+}
+button.restart {
+  background: #0cf574;
+  color: #00000050;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+button.restart:hover {
+  color: #00000098;
+}
+button:hover,
+button:focus {
+  transform: scale(1);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  min-height: 100vh;
+}
+.final-score {
+  color: #00000099;
+}
+.summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #ffffff50;
+  color: #00000099;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.summary h1 {
+  align-self: center;
+}
+
+
+
+/*MY STYLES*/
+
+header {
+   width:100%;
+   height: 350px;
+   position: relative;
+   padding: 0;
+   margin:0;
+   background-color: #373234;
+   overflow: hidden;
+}
+h1 {
+   color: #F4F2F0;
+   font-variant: small-caps;
+   text-shadow: 1px 1px 10px black;
+   font-size: 125px;
+   bottom: 0;
+   left: 5vw;
+   position: absolute;
+   
+}
+h2 {
+	color: #373234;
+	
+	font-variant: small-caps;
+}
+
+.links{
+	color: #E8F8F5;
+	font-size: 15px;
+	position: absolute;
+	text-decoration: none;
+
+}
+.links a:link {
+	color: #E8F8F5;
+	text-decoration: none;
+}
+
+.links a:visited {
+	color: #E8F8F5;
+	text-decoration: none;
+}	
+.icons {
+	height: 50px;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.feeticons .icons {
+	height: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+/* header image */
+.image{
+   background: url("scared_rose.png");
+   background-position: bottom;
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 350px;
+   left: 0;
+   right: 0;
+   z-index: -5;
+   margin: -5;
+   opacity: .5;
+   transform: translate(28vw, 0px);
+   overflow: hidden;
+}
+/*STYLE TAGS FOR NAVBAR */
+nav {
+   margin: 0px;
+   padding: 0px;
+   transform: translate( 0px, -16px);
+}
+/*UL and LI tags for navbar*/
+ul {
+   text-align:center;
+   display: inline-block;
+   list-style-type: none;
+   margin-left: 0px;
+   width: 100%;
+   background-color: #91312a;
+   font-variant: small-caps;
+}
+li {
+   float: left;
+}
+
+.logo {
+	float: right;
+	transform: translate(-2vw, 0);
+}
+
+.navbar, .dropbtn {
+   display: inline-block;
+   color: #F4F2F0;
+   padding: 14px 15px;
+   font-size: 20px;
+   border: 1px solid transparent;
+   text-decoration: none; 
+
+}
+        
+.navbar:hover {
+   background-color: #373234;
+   border: 1px solid #373234;
+}
+/* code for drop down list in nav*/
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* used w3schools as reference for navbar and dropdown list */
+.dropdown .dropbtn{
+	font-size: 20px;
+	border: 1px solid transparent;
+	outline: none;
+	color: #E8F8F5;
+	padding: 14px 15px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+.nav a:hover, .dropdown:hover .dropbtn {
+	background-color: #373234;
+	border: 1px solid #373234;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ed5d53;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px black;
+	z-index: 10;
+	transform: translate(-30px,);
+	
+}
+
+.dropdown-content a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	border: 1px solid transparent;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #d84339;
+	border: 1px solid #ed5d53;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+footer {
+	display: flex;
+	width: 100%;
+	height: 250px;
+	background-color: #373234;
+	color: #E8F8F5;
+	overflow: hidden;
+	position: absolute;
+	font-family: system-ui;
+	align-items: center;
+	justify-content: center;
+	min-width: 600px;
+}
